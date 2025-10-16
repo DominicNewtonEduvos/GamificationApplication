@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- @Author Nicholas Leong        EDUV4551823
+- @Author Aarya Manowah         be.2023.q4t9k6
+- @Author Nyasha Masket        BE.2023.R3M0Y0
+- @Author Sakhile Lesedi Mnisi  BE.2022.j9f3j4
+- @Author Dominic Newton       EDUV4818782
+- @Author Kimberly Sean Sibanda EDUV4818746
+-
+- Supervisor: Stacey Byrne      Stacey.byrne@eduvos.com
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- Top Header -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/adminlogin"
+            android:textColor="#333333"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/access_your_admin_dashboard"
+            android:textColor="#B71C1C"
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <!-- Login Form -->
+    <LinearLayout
+        android:id="@+id/loginForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerLayout"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Email Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mail"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColorHint="#616161"
+                tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/pass_word"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Forgot Password -->
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:text="@string/forgotpassword"
+            android:textColor="#B71C1C"
+            android:textSize="14sp" />
+
+        <!-- Login Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/transparent"
+            app:cornerRadius="8dp"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="2dp"
+            android:text="@string/btnlogin"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize" />
+    </LinearLayout>
+</RelativeLayout>
