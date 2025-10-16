@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">COGNIFY</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+    <string name="access_your_admin_dashboard">Access your admin dashboard</string>
+    <string name="adminlogin">Admin Login</string>
+    <string name="mail">Email</string>
+    <string name="back_to_student_app">Back to Student App</string>
+    <string name="forgotpassword">Forgot Password?</string>
+    <string name="btnlogin">Login</string>
+    <string name="pass_word">Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="mails">Email</string>
+    <string name="happens_to_the_best_of_us_nwe_ll_help_you_reset_it_nplease_enter_your_email_to_reset_your_password">Happens to the best of us!\nWe\'ll help you reset it.\nPlease enter your email to reset your password.</string>
+    <string name="forgot_your_password">Forgot your Password?</string>
+    <string name="haven_t_received_an_email_resend_email">Haven\'t received an email? Resend email</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="we_sent_a_reset_link_to_email_example_com_nonce_you_ve_reset_your_password_you_can_log_in_again">We sent a reset link to email@example.com.\nOnce you\'ve reset your password, you can log in again.</string>
+    <string name="check_your_email">Check your email</string>
+</resources>
