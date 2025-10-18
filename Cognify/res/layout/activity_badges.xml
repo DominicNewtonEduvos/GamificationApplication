@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_dark">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="4dp"
+            android:onClick="onBackPressed" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My Badges"
+            android:textSize="20sp"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+    </LinearLayout>
+
+    <!-- Total Badges Counter -->
+    <TextView
+        android:id="@+id/tv_total_badges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Badges Earned: 4/12"
+        android:textSize="16sp"
+        android:textColor="@color/accent_orange"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Badges Grid -->
+    <GridView
+        android:id="@+id/grid_badges"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:horizontalSpacing="8dp"
+        android:numColumns="2"
+        android:padding="16dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="8dp" />
+
+</LinearLayout>

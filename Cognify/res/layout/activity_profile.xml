@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="24sp"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- User Avatar -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_user_avatar"
+            android:background="@drawable/circle_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username: Kimberly Sibanda"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- User Email -->
+        <TextView
+            android:id="@+id/tv_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="kimberly.s@email.com"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Student ID -->
+        <TextView
+            android:id="@+id/tv_student_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ST2025001"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="testpass@123!"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/iv_password_visibility"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_visibility"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <!-- Change Password Button -->
+        <Button
+            android:id="@+id/btn_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:textSize="14sp"
+            android:textColor="@color/accent_orange"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Current Milestone Level -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Milestone Level"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_milestone"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:progress="65"
+            android:progressTint="@color/accent_orange"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_milestone_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 3 - Advanced Learner"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Action Buttons -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_my_badges"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="My Badges"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/button_primary"
+            android:layout_marginBottom="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_milestones"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/button_primary"
+            android:text="View Milestones"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <!-- Motivational Quote -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/motivational_quote"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:fontStyle="italic"
+            android:lineSpacingExtra="4dp"
+            android:background="@drawable/quote_background"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Notes Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddViewNotes"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="View And Upload Notes"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:background="@drawable/button_secondary"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
